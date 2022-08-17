@@ -1,126 +1,50 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.fotos{
-  position: absolute;  
-   width: 1000px;
-   height: 700px;
-   border: 10px solid black;
-   display: grid;
-   /* animation-name:  slidein;
-    animation-duration: 5s;
+.container1{
+    
+    width: 1700px;
+    height: 780px;
+    position: relative;
+    animation-name: fondo,arbol,ciervo;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-direction: alternate-reverse;
-    animation-timing-function: ease;
-    */
-background: url(/FotoCapas/Ciervo1/image/3-Fondo.png) padding-box right;
-  overflow: hidden;
-  animation-name: ciervo;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-
-}
-
-.arbol{
-
-    margin-top: -40px;
-    width: 1500px;
-    height: 780px;
-    position: absolute;
-    background: url(/FotoCapas/Ciervo1/image/1-Arboles.png) border-box 1110px;
-    animation-name: arbol;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
     animation-timing-function: linear;
     
 }
-.ciervo{
-    
-    margin-top: -20px;
-    width: 1500px;
-    height: 780px;
-    background: url(/FotoCapas/Ciervo1/image/2-Ciervo.png)border-box 1110px;
-    animation-name: ciervo;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
 
+.container1:hover{
+    animation-play-state: paused;
 }
 
-
-@keyframes arbol {
-    0%{
-        object-fit: cover;
-       transform: scale(1);
+@keyframes fondo {
+    from{
+        
+        transform: translateX(-50px);
+        background-image: url(/Ciervo1/image/3-Fondo-removebg.png);
+        position: absolute;
     }
-    25%{
-    object-fit: cover;
-    transform: scale(1.1);
-    }
-    75%{
-        object-fit: cover;
-        transform: scale(0.9);
-    }
-    100%{
-        object-fit: cover;
-    transform: scale(1);
+    to{
+        
+        transform: translateX(150px);
+        background-image: url(/Ciervo1/image/3-Fondo-removebg.png);
+        position: absolute;
     }
 }
-@keyframes ciervo {
-        0%{
-            object-fit: cover;
-           transform: scale(1);
-        }
-        25%{
-        object-fit: cover;
-        transform: scale(0.9);
-        }
-        75%{
-            object-fit: cover;
-            transform: scale(1.1);
-        }
-        100%{
-            object-fit: cover;
-        transform: scale(0.9);
-        }
-
-
-
-
-
-
-
-
-   /* 0%{
-        width: 1400px;
-        height: 780px;
-        background: url(/FotoCapas/image/2-Ciervo.png);
+@keyframes arbol{
+    from{
+        
+        transform: translateX(-50px);
+        background-image: url(/Ciervo1/image/1-Arboles.png);
+        position: absolute;
     }
-    25%{
-        width: 1400px;
-        height: 780px;
-        background: url(/FotoCapas/image/1-Arbolesjpg.jpg);
+    to{
+        
+        transform: translateX(150px);
+        background-image: url(/Ciervo1/image/1-Arboles.png);
     }
-    75%{
-        width: 1400px;
-        height: 780px;
-        background: url(/FotoCapas/image/2-Ciervo.png);
-    }
-    100%{
-        width: 1400px;
-        height: 780px;
-        background: url(/FotoCapas/image/1-Arbolesjpg.jpg);
-    }*/
-
-
-
-
-
 }

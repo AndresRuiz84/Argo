@@ -3,9 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.fondo{
-    width: 100px;
-    height: 400px;
+.container1{
+    width: 100%;
+    height: 100vh;
+   
+}
+.ciervo img{
+    position: absolute;
+   z-index: 1;
+}
+.fondo img{
+    position: absolute;
+    animation-name: fondok;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.arbol img{
     
+    position: absolute;
+    animation-name: arbolk;
+    animation-duration: 10s;
+   animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-play-state: running;
+}
+.fondo img:hover{
+    animation-play-state: running;
+}
+.arbol img:hover{
+    animation-play-state: running;
+}
+
+@keyframes fondok{
+    0%   {transform: translateX(-25px);}
+    25%  {transform: translateX(0);}
+    50%  {transform: translateX(25px);}
+    75% {transform: translateX(0);}
+    100% {transform: translateX(-25px);}
+}
+@keyframes arbolk{
+    0%   {transform: translateX(25px);}
+    25%  {transform: translateX(0);}
+    50%  {transform: translateX(-25px);}
+    75% {transform: translateX(0);}
+    100% {transform: translateX(25px);}
 }
