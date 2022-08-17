@@ -8,43 +8,48 @@
     width: 1700px;
     height: 780px;
     position: relative;
-    animation-name: fondo,arbol,ciervo;
-    animation-duration: 3s;
+}
+.ciervo{
+    position: absolute;
+   z-index: 3;
+}
+
+.fondo{
+position: absolute;
+z-index: 1;
+}
+.arbol{
+    position: absolute;
+   z-index: 2;
+}
+.container1:hover .fondo{
+    animation-name: fondok;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-direction: alternate-reverse;
     animation-timing-function: linear;
     
 }
-
-.container1:hover{
-    animation-play-state: paused;
+.container1:hover .arbol 
+ {
+    animation-name: arbolk;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 
-@keyframes fondo {
-    from{
-        
-        transform: translateX(-50px);
-        background-image: url(/Ciervo1/image/3-Fondo-removebg.png);
-        position: absolute;
-    }
-    to{
-        
-        transform: translateX(150px);
-        background-image: url(/Ciervo1/image/3-Fondo-removebg.png);
-        position: absolute;
-    }
+
+@keyframes fondok {
+    0%   {transform: translateX(0px);}
+    25%  {transform: translateX(-25px);}
+    50%  {transform: translateX(0);}
+    75% {transform: translateX(25px);}
+    100% {transform: translateX(0);}
 }
-@keyframes arbol{
-    from{
-        
-        transform: translateX(-50px);
-        background-image: url(/Ciervo1/image/1-Arboles.png);
-        position: absolute;
-    }
-    to{
-        
-        transform: translateX(150px);
-        background-image: url(/Ciervo1/image/1-Arboles.png);
-    }
+@keyframes arbolk{
+    0%   {transform: translateX(0);}
+    25%  {transform: translateX(25px);}
+    50%  {transform: translateX(0);}
+    75% {transform: translateX(-25px);}
+    100% {transform: translateX(0);}
+   
 }

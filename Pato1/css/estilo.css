@@ -1,0 +1,50 @@
+.container1{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    animation-name: patos;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: normal
+    ;
+    animation-timing-function: linear;
+}
+.container1:hover{
+    animation-play-state: running;
+}
+
+@keyframes patos{
+
+0%{
+    width: 500px;
+    height: 500px;
+    
+    background-image: url(/Pato1/imagen/pajaro-prueba-2.png);
+}
+20%{
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+    opacity: 0.5;
+    background-image: url(/Pato1/imagen/pajaro-prueba-2.png);
+}
+40%{
+    margin-left: 40px;
+    width: 500px;
+    height: 500px;
+    background-image: url(/Pato1/imagen/pajaro-prueba-1.png);
+}
+80%{
+    margin-left: 60px;
+    width: 500px;
+    height: 500px;
+    background-image: url(/Pato1/imagen/pajaro-prueba-3.png);
+}
+100%{
+    margin-left: 80px;
+    width: 500px;
+    height: 500px;    
+    background-image: url(/Pato1/imagen/pajaro-prueba-2.png);
+}
+}
